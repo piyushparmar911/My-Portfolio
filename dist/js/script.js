@@ -61,7 +61,7 @@ const icon = document.querySelector("#icon");
 lightmodeToggle.addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
   if (document.body.classList.contains("light-mode")) {
-    icon.src = "./dist/images/moon.svg";
+    icon.src = "./dist/images/moon.png";
     localStorage.setItem("preferredTheme", "light-mode");
   } else {
     icon.src = "./dist/images/sun.svg";
@@ -71,7 +71,7 @@ lightmodeToggle.addEventListener("click", () => {
 
 if (localStorage.getItem("preferredTheme") == "light-mode") {
   document.body.classList.toggle("light-mode");
-  icon.src = "./dist/images/moon.svg";
+  icon.src = "./dist/images/moon.png";
 }
 
 // Swiper JS Configuration
